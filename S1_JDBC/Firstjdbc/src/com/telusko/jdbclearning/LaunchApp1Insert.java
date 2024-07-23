@@ -2,7 +2,7 @@ package com.telusko.jdbclearning;
 
 import java.sql.*;
 
-public class LaunchApp1 {
+public class LaunchApp1Insert {
 
     public static void main(String[] args) {
         try {
@@ -20,6 +20,16 @@ public class LaunchApp1 {
             //Creating Statement
             Statement statement=connect.createStatement();
             System.out.println("Statement Created");
+            
+            //Insert Data 
+            String sql="INSERT INTO studentinfo(id,sname,sage,scity) VALUES(2,'Vishu',22,'Pune')";
+           int rowAffected= statement.executeUpdate(sql);
+           if(rowAffected==0) {
+        	   System.out.println("Zero rows affected");
+           }
+           else {
+        	   System.out.println("Rows Affected");
+           }
 
           
           
