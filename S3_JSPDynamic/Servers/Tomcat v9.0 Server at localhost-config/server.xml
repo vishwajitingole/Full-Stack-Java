@@ -160,7 +160,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="Dynamic3doGetdoPost" path="/Dynamic3doGetdoPost" reloadable="true" source="org.eclipse.jst.jee.server:Dynamic3doGetdoPost"/></Host>
+      <Context docBase="Dynamic3doGetdoPost" path="/Dynamic3doGetdoPost" reloadable="true" source="org.eclipse.jst.jee.server:Dynamic3doGetdoPost"/><Context docBase="Dynamic3RedirectJSP" path="/Dynamic3RedirectJSP" reloadable="true" source="org.eclipse.jst.jee.server:Dynamic3RedirectJSP"/><Context docBase="Dynamic4ForwardDispatchingApp" path="/Dynamic4ForwardDispatchingApp" reloadable="true" source="org.eclipse.jst.jee.server:Dynamic4ForwardDispatchingApp"/><Context docBase="Dynamic5IncludeDispatchingApp" path="/Dynamic5IncludeDispatchingApp" reloadable="true" source="org.eclipse.jst.jee.server:Dynamic5IncludeDispatchingApp"/><Context docBase="Dynamic6HttpSession" path="/Dynamic6HttpSession" reloadable="true" source="org.eclipse.jst.jee.server:Dynamic6HttpSession"/></Host>
     </Engine>
   </Service>
 </Server>
