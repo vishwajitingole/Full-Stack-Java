@@ -33,7 +33,7 @@ public class Register extends HttpServlet {
 		
 		PreparedStatement psm=connect.prepareStatement("INSERT INTO Register(name,password,city) "+"VALUES(?,?,?)");
 		psm.setString(1, name);
-		psm.setString(2, pass);
+		psm.setString(2, password);
 		psm.setString(3,city);
 		int rows=psm.executeUpdate();		
 		System.out.print("Rows Affected"+rows);
